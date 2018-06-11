@@ -12,11 +12,11 @@ console.log(computeAverageLengthOfWords('Hola', 'chao'));
  }
  console.log(getNthElement([1, 2, 3, 4, 5, 6, 100, 7, 9], 1));
 
-//convertDoubleSpaceToSingle HTML 6
+//convertDoubleSpaceToSingle
 const convertDoubleSpaceToSingle = (str) => str.split("  ").join(" ");
 console.log(convertDoubleSpaceToSingle('MESSI  IS  THE  GREATEST  PLAYER  EVER'));
 
-////areValidCredentials
+ //areValidCredentials
 const areValidCredentials = (name, password) => {
   if (name.length >3 && password.length >= 8){
     return true;
@@ -49,3 +49,14 @@ console.log(findPairForSum([3, 17, 12, 7, 2], 5));
       return reduceArr;
     };
     console.log(computeSumOfAllElements([2, 4, 6]));
+
+    //filterOddElements
+    const filterOddElements = (arr) => {
+       let newNumbers = [];
+       for (let i = 0; i< arr.length; i ++) {
+       if (arr[i] % 2 !== 0) { 
+       newNumbers.push(arr[i]); 
+     }
+    } return newNumbers;
+  }
+  console.log(filterOddElements([1, 2, 3, 4, 5]));
