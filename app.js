@@ -43,7 +43,7 @@ console.log(findPairForSum([3, 17, 12, 7, 2], 5));
     //computeSumOfAllElements
 
       const computeSumOfAllElements = (arr) => {
-      const reduceArr = arr.reduce((previousValue, currentValue) =>{
+      const reduceArr = arr.reduce((previousValue, currentValue) => {
         return previousValue + currentValue;
       });
       return reduceArr;
@@ -60,3 +60,15 @@ console.log(findPairForSum([3, 17, 12, 7, 2], 5));
     } return newNumbers;
   }
   console.log(filterOddElements([1, 2, 3, 4, 5]));
+
+//findShortestOfThreeWords
+const findShortestOfThreeWords = (word1, word2, word3) => {
+ if ( word1.length >= word2.length &&  word2.length <= word3.length) {
+   return word2;
+ } else if (word2.length >= word1.length && word1.length <= word3.length) {
+   return word1;
+ } else {
+   return word3;
+ }
+}
+console.log(findShortestOfThreeWords('a', 'dos', 'tres'));
