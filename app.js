@@ -72,3 +72,16 @@ const findShortestOfThreeWords = (word1, word2, word3) => {
  }
 }
 console.log(findShortestOfThreeWords('a', 'dos', 'tres'));
+
+//getLongestOfThreeWords
+const getLongestOfThreeWords = (word1, word2, word3) => {
+  // your code here
+  if ( word1.length >= word2.length &&  word1.length >= word3.length) {
+   return word1;
+ } else if (word2.length >= word1.length && word2.length >= word3.length) {
+   return word2;
+ } else {
+   return word3;
+ }
+}
+console.log(getLongestOfThreeWords('estos', 'tres', 'palabras'));
